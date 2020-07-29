@@ -1,12 +1,12 @@
-@media (max-width: 960px) {
-    /* For a screen < 960px, this CSS will be read */
+/*@media (max-width: 960px) {
+   
     .container {
       width: 700px;
     }
 }
 
 @media (max-width: 720px) {
-    /* For a screen < 720px, this CSS will be read */
+    
     .container {
       width: 500px;
       background-color: red;
@@ -14,11 +14,11 @@
 }
 
 @media (max-width: 540px) {
-    /* For a screen < 540px, this CSS will be read */
+   
     .container {
       width: 300px;
     }
-}
+}*/
 
 body {
     background-color: white;
@@ -29,10 +29,20 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+.container {
+    text-align: center;
+    width: 1000px;   
+    margin: 0 auto; 
+    border-radius: 1%;
+    background-color: white;
+    padding: 50px;
+}
+
+
+h1 ,h2, h3 {
     color: #204051;
     font-family: 'Roboto', sans-serif;
-    font-size: normal;
+    font-size: 50px;
     line-height: normal;
 }
 
@@ -43,20 +53,92 @@ a {
 
 img {
     border-radius: 80%;
+    width: 200px;
+    height: 200px;
 }
 
 a:hover {
     color: #84a9ac;
 }
 
-.container {
-    text-align: center;
-    width: 500px;   
-    margin: 0 auto; 
-    border-radius: 1%;
+ul {
+    list-style-type: none;
 }
 
 .card {
-    background-color: #e4e3e3;
-    border-radius: 1%;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.card-header {
+    padding: 20px;
+    background-color: #adcae6;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.card-img {
+    padding: 50px;
+    background-color: #bde0eb ;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.card-content {
+    padding: 50px;
+    background-color:  #FFFEF2; 
+    border-radius: 25px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+img {
+    position: absolute;
+    top: 180px;
+    left: 475px;
+}
+
+.card-button {
+    padding: 25px;
+    text-align: center;
+} 
+.card-button ul {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+}
+
+.card-button ul li hr{
+    
+    width: 200px;
+    border-width: 10px, solid;
+    color: #90ee90;
+}
+
+.card-footer {
+    justify-content: center;
+    display: flex;
+}
+
+.card-footer ul {
+    list-style-type: none;
+}
+
+.card-footer ul li {
+    padding: 5px;
+    text-align: left;
+}
+
+.card-footer ul li a i {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.button {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #90ee90;
 }
